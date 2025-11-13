@@ -1,5 +1,3 @@
-<img width="1408" height="304" alt="Generated image 3" src="https://github.com/user-attachments/assets/2e149458-f168-4015-9a1a-ee718522cfeb" />
-
 # How to install extension
 gemini extensions install https://github.com/adamgroenhout/gemini-cli-extension_kbase
 
