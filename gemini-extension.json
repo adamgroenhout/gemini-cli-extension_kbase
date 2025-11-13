@@ -1,0 +1,7 @@
+{
+  "name": "name of command",
+  "version": "1.0.0"
+  "excludeTools": ["name of tool"]
+  "mcpServers": {}
+  "settings": []
+}

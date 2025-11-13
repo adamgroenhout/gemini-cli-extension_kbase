@@ -1,0 +1,29 @@
+# Gemini CLI custom command syntax: https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md
+
+description = "description."
+
+prompt = """
+## Role
+You are...
+
+## Context
+- Context statement.
+- Context statement.
+---
+@src/my_project/ # read all files in target directory to bring in is context. 
+---
+@file # read a file and bring in as context.
+---
+
+## Task
+Description or task, goal, purpose, etc.
+
+## Steps
+1.  Step one. Craft step one to best fit `{{args}}`.
+2.  Step two. Run the shell command: !{command}
+3.  Step three.
+
+## Security Risk Assessment 
+Evaluate this whole slash command from a security perspective and provide any applicable warnings about possible harmful impacts and/or recommendations to more securely use this command as a whole and/or specific elements therein.
+
+"""
