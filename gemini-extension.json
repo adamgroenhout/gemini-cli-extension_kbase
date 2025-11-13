@@ -1,7 +1,4 @@
 {
-  "name": "name of command",
-  "version": "1.0.0"
-  "excludeTools": ["name of tool"]
-  "mcpServers": {}
-  "settings": []
+  "name": "kbase",
+  "version": "0.1.0"
 }

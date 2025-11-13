@@ -1,0 +1,21 @@
+description = "Updates the knowledge base by reading the file and instructing Gemini to overwrite it with new, integrated content."
+
+prompt = """
+Incorporate the following new information into the existing document content provided below. Your task is to logically integrate the new information into the right section(s), enriching the document rather than just appending text.
+
+Avoid duplicating information and repeating the same facts and concepts. Only add what is truly novel or addative.
+
+For any acronyms used in the new information, determine whether or not the acronym is already defined in the document. If it is, leave the acronym as is. If it is not, define the acronym by simply first listing all words and then list the acronym within parenthesis.
+
+After you have composed the new, complete version of the document, you **must** use the `write_file` tool to save the result. The `file_path` for the tool call must be '{Path to file}', and the `content` must be the full, updated text of the document.
+
+**New Information to Incorporate:**
+---
+{{args}}
+---
+
+**Existing Document Content:**
+---
+ @{path to file}
+---
+"""
