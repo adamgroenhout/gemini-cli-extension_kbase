@@ -1,6 +1,3 @@
-# How to install extension
-gemini extensions install https://github.com/adamgroenhout/gemini-cli-extension_kbase
-
 # KBase Extension
 
 The `kbase` extension provides a `/kbase` command to intelligently update a central knowledge base file.
@@ -13,3 +10,6 @@ The `/kbase` command takes new information provided by the user and integrates i
 To use the extension, invoke the command with the new information you want to add:
 
 `/kbase {new information}`
+
+### How to install extension
+gemini extensions install https://github.com/adamgroenhout/gemini-cli-extension_kbase
